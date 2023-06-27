@@ -10,4 +10,4 @@ Ideally, one would try to separate project folders trying to minimize connection
 ![Other Project Folder](https://www.plantuml.com/plantuml/png/SoWkIImgAStDuU8gI4pEJanFLL3oByb8BL88AChFIaqkKN3Bpqb9BL9IgEQgvU9oICrB0Ie60000.png)
 
 
-![libs](//www.plantuml.com/plantuml/png/SoWkIImgAStDuIf8JCvEJ4zLKCh9J2fMKgZcKb202-LMnaFP48bQhbekXzIy5A0-0000.png)
+![libs](https://www.plantuml.com/plantuml/png/SoWkIImgAStDuIf8JCvEJ4zLKCh9J2fMKgZcKb202-LMnaFP48bQhbekXzIy5A0-0000.png)

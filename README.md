@@ -25,8 +25,8 @@ You often end up having a *misc* folder for random files as well.
 
 ## data
 
-This folders cpntains all raw data files from experiments. 
-They should be ordered accordint to the acquisition date, and inside, a subfolder for each sample. 
+This folders contains all raw data files from experiments. 
+They should be ordered according to the acquisition date, and inside, a subfolder for each sample. 
 Remember that if a sample or glass contains several pieces or subsamples, you can use underscores to separate the names (*s_0_img_000.tiff*).
 Try to keep naming convention across folders (at least inside same experiment types) as it makes it easier to parse attributes from filenames.
 The convention of parameter name separated by underscore to its value is often good. For example sample 1, condition 2 and image 5 would be: *s_1_cond_2_img_005.tiff*.
@@ -40,7 +40,7 @@ Missing parameters can sometimes be ignored with a parser.
 
 ## results
 
-If some analytical step takes a long timea dn generates intermediate results that we wish to load quickly, these should be saved in this folder.
+If some analytical step takes a long time and generates intermediate results that we wish to load quickly, these should be saved in this folder.
 Sometimes we test different parameters or would like to update something after some time, so it is good to keep these in different folders.
 If one of these folders is not accessed in a long time it can be either compressed or deleted.
 
@@ -53,24 +53,27 @@ If one of these folders is not accessed in a long time it can be either compress
 
 This is where the magic happens.
 
- - Here we should keep the notebook files and scripts were we would refactor functions used in several notebooks.
+ - Here we should keep the notebook files and scripts.
+ - Functions used in several notebooks should be refactored into the scripts.
  - This folder could be git tracked, but be careful with image output of notebooks.
- - If scripts grow big or complicated, maybe it's time to make a package.
+ - If scripts grow big or complicated, maybe it's time to make a package and move it to libs.
 
 
 ## figures
 
-Figures can be placed here as is or in different subfolders (Ideally grouped in figures as the paper or presentation).
+Figures can be placed here as is or in different subfolders (ideally grouped in figures as the paper or presentation).
 Try to overwrite figures so that this folder does not grow as crazy.
 It is often better to see the figure inside a notebook or IDE, and then export here the close to final version.
 
-**TIP**: Always set the actual size of the figure inside your code!!! This will reduce a lot the time needed to correct font sizes and how to fit it into panels of figures.
+**TIP**: Always set the actual size of the figure inside your code!!!
+This will reduce a lot the time needed to correct font sizes and how to fit it into panels of figures.
 
 
 ## unpublished
 
 Here you will have folders for papers and presentations you are still working on.
 Although it might be annoying at first to copy paste processed figures here, think about it as being the main branch in a git repo.
+Regarding figures, only copy here the final version that will be uploaded to the paper (probably pdf).
 Some formats allow git tracking such as latex or typst.
 Latex Beamers for example are easy to git track and possible choice intead of powerpoint.
 You might also want to make a notebook in slide format, but this is hardcore.
